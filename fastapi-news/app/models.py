@@ -18,24 +18,6 @@ class News(Base):
     reporter = relationship("Reporter")
     publisher = relationship("Publisher")
 
-
-
-
-
-
-
-    # @property
-    # def category_name(self):
-    #     return self.category.name if self.category else None
-
-    # @property
-    # def reporter_name(self):
-    #     return self.reporter.name if self.reporter else None
-
-    # @property
-    # def publisher_name(self):
-    #     return self.publisher.name if self.publisher else None
-
 class Category(Base):
     __tablename__ = "categories"
     id = Column(Integer, primary_key=True, index=True)
